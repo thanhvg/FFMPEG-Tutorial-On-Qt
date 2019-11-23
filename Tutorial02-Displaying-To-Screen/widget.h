@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QVBoxLayout>
 #include <QLabel>
-#include "../engine/ffmpengworker.h"
+#include "../engine/ffmpegworker.h"
 #include <QtConcurrent>
 
 class Widget : public QWidget

@@ -6,7 +6,7 @@
 #include <QLabel>
 #include <QList>
 //#include "ffmpengworker.h"
-#include "../engine/ffmpengworker.h"
+#include "../engine/ffmpegworker.h"
 
 class Widget : public QWidget
 {
