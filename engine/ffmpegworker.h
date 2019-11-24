@@ -1,33 +1,28 @@
 #ifndef FFMPENGWORKER_H
 #define FFMPENGWORKER_H
 
+#include <QImage>
+#include <QList>
 #include <QObject>
 #include <QPixmap>
-#include <QList>
-#include <QImage>
 #include <QtConcurrent>
 
-class FFmpengWorker : public QObject
-{
-    Q_OBJECT
+class FFmpengWorker : public QObject {
+  Q_OBJECT
 public:
-    static FFmpengWorker*       instance();
-    explicit                    FFmpengWorker(QObject *parent = 0);
+  static FFmpengWorker *instance();
+  explicit FFmpengWorker(QObject *parent = 0);
 
-
-    static QList<QPixmap>*      getScreenCaps(QString fileUrl);
-    void                        displayToScreen(QString fileUrl);
-
+  static QList<QPixmap> *getScreenCaps(QString fileUrl);
+  void displayToScreen(QString fileUrl);
 
 signals:
-    void                        displayScreenUpdate(QImage);
-    void                        displayFinished();
+  void displayScreenUpdate(QImage);
+  void displayFinished();
 
 public slots:
 private:
-
-
-//    QPixmap*                    m_displayPixmap = NULL;
+  //    QPixmap*                    m_displayPixmap = NULL;
 };
 
 #endif // FFMPENGWORKER_H

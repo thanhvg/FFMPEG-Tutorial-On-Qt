@@ -3,13 +3,12 @@
 
 #include <QWidget>
 
-class Widget : public QWidget
-{
-    Q_OBJECT
+class Widget : public QWidget {
+  Q_OBJECT
 
 public:
-    Widget(QWidget *parent = 0);
-    ~Widget();
+  Widget(QWidget *parent = 0);
+  ~Widget();
 };
 
 #endif // WIDGET_H
